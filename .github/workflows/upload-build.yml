@@ -26,7 +26,7 @@ jobs:
 
       - name: Fastlane
         timeout-minutes: 720
-        run: script fastlane.log bundle exec fastlane upload_build
+        run: script fastlane.log bundle exec fastlane build
         env:
           APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
           APP_STORE_CONNECT_API_KEY_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
